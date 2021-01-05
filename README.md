@@ -10,7 +10,7 @@ The project has been set up to use webpack for bundling assets and code. To get 
 npm install
 ```
 
-During development, you can use the following command to run a `webpack-dev-server` for testing on your computer or a device on your local network:
+During development, you can use the following command to run a `webpack server` for testing on your computer or a device on your local network:
 ```
 npm run start
 ```

@@ -19,7 +19,9 @@ module.exports = {
 	devServer: {
 		contentBase: './dist',
 		https: true,
-		host: '0.0.0.0'
+		host: "0.0.0.0",
+		hot: true,
+		open: true,
 	},
 	module: {
 		rules: [{
