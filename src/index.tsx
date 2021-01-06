@@ -3,7 +3,7 @@ import './style.sass';
 import { render } from 'react-dom';
 import React from 'react';
 import { ZapparCamera, ImageTracker, ZapparCanvas } from '@zappar/zappar-react-three-fiber';
-import targetFile from 'example-tracking-image.zpt'
+import targetFile from './assets/example-tracking-image.zpt'
 
 export default function App() {
     return (

@@ -2,6 +2,9 @@ version: 2
 updates:
 - package-ecosystem: npm
   directory: "/"
+  ignored_updates:
+      - match:
+          dependency_name: "three"
   schedule:
     interval: daily
   open-pull-requests-limit: 10
