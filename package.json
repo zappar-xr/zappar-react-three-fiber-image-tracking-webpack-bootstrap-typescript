@@ -40,7 +40,7 @@
     "worker-loader": "^3.0.7"
   },
   "dependencies": {
-    "@zappar/zappar-react-three-fiber": "0.1.21",
+    "@zappar/zappar-react-three-fiber": "0.1.22",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-three-fiber": "^5.3.11",
