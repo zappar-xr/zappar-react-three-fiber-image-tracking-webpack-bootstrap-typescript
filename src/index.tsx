@@ -1,28 +1,17 @@
-import './style.sass';
-
-import { render } from 'react-dom';
 import React from 'react';
-import { ZapparCamera, ImageTracker, ZapparCanvas } from '@zappar/zappar-react-three-fiber';
-import targetFile from './assets/example-tracking-image.zpt'
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-export default function App() {
-    return (
-      <ZapparCanvas>
-        <ZapparCamera rearCameraMirrorMode="css" />
-        <ImageTracker
-          onNotVisible={(anchor) => console.log(`Not visible ${anchor.id}`)}
-          onNewAnchor={(anchor) => console.log(`New anchor ${anchor.id}`)}
-          onVisible={(anchor) => console.log(`Visible ${anchor.id}`)}
-          targetImage={targetFile}
-        >
-          <mesh position={[0, 0, -5]}>
-            <sphereBufferGeometry />
-            <meshStandardMaterial color="hotpink" />
-          </mesh>
-        </ImageTracker>
-        <directionalLight position={[2.5, 8, 5]} intensity={1.5} />
-      </ZapparCanvas>
-    );
-}
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
 
-render(<App />, document.getElementById('root'));
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
