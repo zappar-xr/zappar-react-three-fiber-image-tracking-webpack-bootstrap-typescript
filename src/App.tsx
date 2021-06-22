@@ -5,7 +5,7 @@ import targetFile from './assets/example-tracking-image.zpt'
 function App() {
     return (
       <ZapparCanvas>
-        <ZapparCamera rearCameraMirrorMode="css" />
+        <ZapparCamera />
         <ImageTracker
           onNotVisible={(anchor) => console.log(`Not visible ${anchor.id}`)}
           onNewAnchor={(anchor) => console.log(`New anchor ${anchor.id}`)}
