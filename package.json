@@ -53,6 +53,7 @@
     "scripts": {
         "build": "react-app-rewired build",
         "eject": "react-scripts eject",
+        "preinstall": "npx npm-force-resolutions",
         "start": " HTTPS=true react-app-rewired start",
         "test": "react-app-rewired test"
     },
