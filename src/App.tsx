@@ -1,6 +1,7 @@
 import React from 'react';
 import { ZapparCamera, ImageTracker, ZapparCanvas } from '@zappar/zappar-react-three-fiber';
-import targetFile from './assets/example-tracking-image.zpt'
+
+const targetFile = new URL('./assets/example-tracking-image.zpt', import.meta.url).href;
 
 function App() {
     return (
